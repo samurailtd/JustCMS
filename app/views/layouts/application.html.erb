@@ -1,0 +1,47 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+
+<head>
+<meta http-equiv="Content-Type" content="application/vnd.wap.xhtml+xml; charset=UTF-8"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+<%= stylesheet_link_tag    "style", :media => "all" %>
+<script type="text/javascript" src="/themes/wapage/accordian.pack.js"></script>
+</head>
+
+<body onload="new Accordian('tml',5,'non');">
+
+<div id="logo">
+<%= image_tag('images/logo.png', :alt => "��������", :href => "/") %>
+</div>
+
+<div id="head">
+<a href="#">Войти</a>
+<a href="#">Регистрация</a>
+</div>
+
+<div id="adv">
+<a href="#">Новый Сервис Каталогов!</a><br />
+<a href="#">Java-чат Галактика знакомств!</a><br />
+<a href="#">Альтернативная-рок музыка</a><br />
+</div>
+
+<div class="title">
+<b><%= image_tag('images/icom.png') %> Главное меню:</b>
+</div>
+<%= yield %>
+
+<div id="banners">
+<a href="#"><img src="http://rosban.su/20065.img?page" alt="rosban.su" /></a>
+</div>
+
+<div id="foot">
+<a href="#">� waPAGE.net</a> | On: <a href="#">7/12</a>
+</div>
+
+<div id="count">
+<a href="http://waplog.net/ru/c.shtml?47916"><img src="http://c.waplog.net/ru/47916.cnt" alt="waplog" /></a>
+</div>
